@@ -1,0 +1,20 @@
+.container{
+  width: 250px;
+  height: 48px;
+  outline: none;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover{
+    filter: invert(100);
+  }
+  &:active{
+    animation: growShrink .3s ease-in-out;
+  }
+}
+@keyframes growShrink{
+  25%{
+    transform: scale(1.25)
+  }
+}
